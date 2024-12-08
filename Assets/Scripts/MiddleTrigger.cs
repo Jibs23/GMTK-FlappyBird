@@ -18,9 +18,10 @@ public class MiddleTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // If the object that collided with the trigger has the "Player" tag, call the addScore method on the logic component
-        if (collision.gameObject.layer == 3)
+        if (collision.gameObject.layer == 3 && logic.isGameOver == false)
         {
             logic.addScore(1);
+            Debug.Log("Score added");
         }
     }
 

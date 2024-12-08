@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class LogicScript : MonoBehaviour
 {
+    public bool isGameOver = false;
     public GameObject GameOverScreen;
     public int playerScore = 0;
     public Text scoreText;
@@ -19,5 +20,6 @@ public class LogicScript : MonoBehaviour
     public void gameOver()
     {
         GameOverScreen.SetActive(true); // Show the game over screen
+        isGameOver = true;
     }
 }

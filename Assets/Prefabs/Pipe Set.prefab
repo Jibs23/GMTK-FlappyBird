@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1552050181080435746}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.5, z: 0}
+  m_LocalPosition: {x: 0, y: -2.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -132,7 +132,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.26, y: 0.93}
+  m_Size: {x: 0.56, y: 2.84}
   m_EdgeRadius: 0
 --- !u!1 &3007430168198877306
 GameObject:
@@ -161,7 +161,7 @@ Transform:
   m_GameObject: {fileID: 3007430168198877306}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalPosition: {x: 0, y: 2.1, z: 0}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -266,7 +266,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.26, y: 0.93}
+  m_Size: {x: 0.56, y: 2.84}
   m_EdgeRadius: 0
 --- !u!1 &3726872426159377299
 GameObject:
@@ -345,7 +345,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.4, y: 2.13}
+  m_Size: {x: 0.4, y: 1.33}
   m_EdgeRadius: 0
 --- !u!114 &3799135684262321344
 MonoBehaviour:
@@ -373,7 +373,7 @@ GameObject:
   m_Layer: 0
   m_Name: Pipe Set
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -387,7 +387,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 615522918045999794}
@@ -407,5 +407,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79e16c3ff6a7afd4e88e43c6b9971685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadzone: -10
+  moveSpeed: 8
+  deadzone: -16
