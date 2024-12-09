@@ -19,6 +19,7 @@ public class bird : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // Find the game objects with the tag "Logic" and "SoundManager" and get their components.
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         sound = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundEffectPlayer>();
     }
@@ -30,7 +31,7 @@ public class bird : MonoBehaviour
         {
             Debug.Log("Flap");
             myRigidbody.linearVelocity = Vector2.up * flap_strenght;
-            sound.PlayFlapSound(); //? WHY IS THIS NOT CALLED?
+            sound.PlayFlapSound();
         }
 
         if (transform.position.y > 8 || transform.position.y < -8) // If the bird is off screen
