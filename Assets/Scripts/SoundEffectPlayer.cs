@@ -7,20 +7,16 @@ public class SoundEffectPlayer : MonoBehaviour
 
     public void PlayFlapSound()
     {
-        Debug.Log("Flap sound played");
-        audioSource.clip = flapSound;
-        audioSource.Play();
+        audioSource.PlayOneShot(flapSound);
     }
 
     public void PlayScoreSound()
     {
-        audioSource.clip = scoreSound;
-        audioSource.Play();
+        audioSource.PlayOneShot(scoreSound);
     }
 
     public void PlayGameOverSound()
     {
-        audioSource.clip = gameOverSound;
-        audioSource.Play();
+        audioSource.PlayOneShot(gameOverSound);
     }
 }
