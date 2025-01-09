@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 6ffd74b2364fcc045bfd9a2cdd66e49e
+guid: b1372d98e6649fd42a621a8f8b4db7f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3765143688702359806
-    second: Bird-Sheet_0
-  - first:
-      213: 6188496016625490312
-    second: Bird-Sheet_1
-  - first:
-      213: 8804136502033358557
-    second: Bird-Sheet_2
-  - first:
-      213: 3021842171241791556
-    second: Bird-Sheet_3
+      213: 9197288097858868601
+    second: SliceTextBox_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -109,111 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bird-Sheet_0
+      name: SliceTextBox_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 20
-        height: 20
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 12, z: 3, w: 3}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef8786d7c3a704430800000000000000
-      internalID: 3765143688702359806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bird-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 0
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 889d1ecc654f1e550800000000000000
-      internalID: 6188496016625490312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bird-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 0
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dde9fb590839e2a70800000000000000
-      internalID: 8804136502033358557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bird-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 0
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4408920c17dbfe920800000000000000
-      internalID: 3021842171241791556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bird-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31d4e40922194454e9228e1a0685d612
-      internalID: 249384675
+      spriteID: 9755ec1bbc453af70800000000000000
+      internalID: 9197288097858868601
       vertices: []
       indices: 
       edges: []
@@ -222,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 24ff72048fd2bfb48bdad4a085b96562
+    spriteID: ea979465e56ce4d47ba629947f6dae79
     internalID: 0
     vertices: []
     indices: 
@@ -232,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bird-Sheet_0: 3765143688702359806
-      Bird-Sheet_1: 6188496016625490312
-      Bird-Sheet_2: 8804136502033358557
-      Bird-Sheet_3: 3021842171241791556
-      Bird-Sheet_4: 249384675
+      SliceTextBox_0: 9197288097858868601
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
