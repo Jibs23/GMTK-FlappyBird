@@ -3,6 +3,7 @@ using UnityEngine;
 public class PipeSpawner : MonoBehaviour
 {
     public GameObject pipePrefab;
+    public LogicScript logic;
     public float spawnRate = 2;
     private float timer = 0;
     public float heightOffset = 1;
@@ -19,6 +20,7 @@ public class PipeSpawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         SpawnPipe();
     }
 
@@ -26,6 +28,8 @@ public class PipeSpawner : MonoBehaviour
     void Update()
     {
         // If the timer is less than the spawn rate, increment the timer
+        if (logic.isGameOver == true || logic.IsGameRunning == false) return;
+        
         if (timer < spawnRate)
         {
             timer += Time.deltaTime;

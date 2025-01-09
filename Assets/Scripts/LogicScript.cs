@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 public class LogicScript : MonoBehaviour
 {
+    public GameObject corpsePrefab;
     public SoundEffectPlayer sound;
     public GameObject GameOverScreen;
+    public SceneManager SceneManager;
     public Text scoreText;
     public bool isGameOver = false;
+    public bool IsGameRunning = false; // For when the game starts, waiting for input.
     public int playerScore = 0;
     [ContextMenu("Increase Score")] // This attribute adds a button to the inspector that calls the method when clicked
     public void addScore( int scoreToAdd) 
@@ -17,7 +19,7 @@ public class LogicScript : MonoBehaviour
     }
     public void restartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload the current scene
+        SceneManager.ReloadCurrentScene(); // Reload the current scene
     }
     public void gameOver()
     {

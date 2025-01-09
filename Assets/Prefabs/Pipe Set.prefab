@@ -415,5 +415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79e16c3ff6a7afd4e88e43c6b9971685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logic: {fileID: 0}
   moveSpeed: 8
   deadzone: -16
