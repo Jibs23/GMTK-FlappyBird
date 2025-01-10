@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Logic
   - SoundManager
+  - Highscore
   layers:
   - Default
   - TransparentFX

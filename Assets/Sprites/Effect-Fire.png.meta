@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: e32996ca9ad6f90448e4cd4ef745326e
+guid: 835a4ec6573c1a34f843f49e6501436c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3349391187094723686
-    second: Cloud_0
+      213: 2185905801468650907
+    second: Effect-Fire_0
+  - first:
+      213: -4053618685634221610
+    second: Effect-Fire_1
+  - first:
+      213: -7701957593740736683
+    second: Effect-Fire_2
+  - first:
+      213: -3987728216344574630
+    second: Effect-Fire_3
+  - first:
+      213: -862166521839430691
+    second: Effect-Fire_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,7 +60,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cloud_0
+      name: Effect-Fire_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 64
-        height: 32
+        y: 8
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,64 +127,108 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66cda90f98d6b7e20800000000000000
-      internalID: 3349391187094723686
+      spriteID: b952109beb5e55e10800000000000000
+      internalID: 2185905801468650907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_1
+      name: Effect-Fire_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 32
+        x: 8
+        y: 8
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a3ed7015b8b101e449af13566f2452f1
-      internalID: -93512181
+      spriteID: 6d9e2eb4847aeb7c0800000000000000
+      internalID: -4053618685634221610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_2
+      name: Effect-Fire_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 64
-        height: 32
+        x: 16
+        y: 8
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: acc0480f8545e394ca65a99f92120cf2
-      internalID: -723111473
+      spriteID: 55706fd00662d1590800000000000000
+      internalID: -7701957593740736683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud_3
+      name: Effect-Fire_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55cafba05eb8a8c0800000000000000
+      internalID: -3987728216344574630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect-Fire_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3d688cd18f804f0800000000000000
+      internalID: -862166521839430691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect-Fire_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,8 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 079e0e2ecbf54b040a176862279025ec
-      internalID: 123225726
+      spriteID: aa4cc1349b221c24abf4dc82a4f5caeb
+      internalID: 108910315
       vertices: []
       indices: 
       edges: []
@@ -191,7 +247,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bd448db2a488ca548b546cf4efd05d7c
+    spriteID: 6d1eb6e477b69304483311fe0f8e3306
     internalID: 0
     vertices: []
     indices: 
@@ -201,10 +257,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cloud_0: 3349391187094723686
-      Cloud_1: -93512181
-      Cloud_2: -723111473
-      Cloud_3: 123225726
+      Effect-Fire_0: 2185905801468650907
+      Effect-Fire_1: -4053618685634221610
+      Effect-Fire_2: -7701957593740736683
+      Effect-Fire_3: -3987728216344574630
+      Effect-Fire_4: -862166521839430691
+      Effect-Fire_5: 108910315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

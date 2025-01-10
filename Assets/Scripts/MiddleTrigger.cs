@@ -3,11 +3,13 @@ using UnityEngine;
 public class MiddleTrigger : MonoBehaviour
 {
     public LogicScript logic;
+    public HighscoreTrackingScript highscore;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         // Find the LogicScript component on the object with the "Logic" tag and assign it to the logic variable
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+        highscore = GameObject.FindGameObjectWithTag("Highscore").GetComponent<HighscoreTrackingScript>();
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class MiddleTrigger : MonoBehaviour
         if (collision.gameObject.layer == 3 && logic.isGameOver == false)
         {
             logic.addScore(1);
+            highscore.UpdateHighscore();
             Debug.Log("Score added");
         }
     }

@@ -4,6 +4,7 @@ public class SoundEffectPlayer : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip flapSound, scoreSound, gameOverSound;
+    public AudioClip buttonClickSound;
 
     public void PlayFlapSound()
     {
@@ -18,5 +19,9 @@ public class SoundEffectPlayer : MonoBehaviour
     public void PlayGameOverSound()
     {
         audioSource.PlayOneShot(gameOverSound);
+    }
+    public void PlayButtonClickSound()
+    {
+        audioSource.PlayOneShot(buttonClickSound);
     }
 }
