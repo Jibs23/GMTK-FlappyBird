@@ -6,7 +6,7 @@ public class PipeScript : MonoBehaviour
     void Start()
     {
         // Randomly rotate the pipe
-        int RandomRotation = Random.Range(-5, 5);
+        int RandomRotation = Random.Range(-2, 2);
         transform.Rotate(0, 0, RandomRotation);
     }
 

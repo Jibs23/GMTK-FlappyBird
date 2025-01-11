@@ -23,7 +23,6 @@ public class CorpseScript : MonoBehaviour
     {
         yield return new WaitForSeconds(time); // Wait for the specified time
         myRigidbody.bodyType = RigidbodyType2D.Dynamic; // Change the body type to Dynamic
-        mySpriteRenderer.flipY = true; // Flip the sprite vertically
     }
     private IEnumerator DestroyAfterTime(float time)
     {
