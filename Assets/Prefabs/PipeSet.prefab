@@ -368,6 +368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
+  highscore: {fileID: 0}
 --- !u!1 &5484090571759889885
 GameObject:
   m_ObjectHideFlags: 0
