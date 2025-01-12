@@ -12,7 +12,6 @@ public class HighscoreTrackingScript : MonoBehaviour
     {
         highscoreText.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
         Logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-        UnlockedHardMode = PlayerPrefs.GetInt("HardmodeUnlocked", 0) == 1; // Check whether hardmode is unlocked.
     }
     public void UpdateHighscore()
     {
@@ -24,18 +23,4 @@ public class HighscoreTrackingScript : MonoBehaviour
 
                 }
             }
-    public void UnlockHardModeOption()
-    {
-        // Retrieve the current value
-        bool isHardModeUnlocked = PlayerPrefs.GetInt("HardmodeUnlocked", 0) == 1;
-
-        // Toggle the value
-        isHardModeUnlocked = !isHardModeUnlocked;
-
-        // Save the new value
-        PlayerPrefs.SetInt("HardmodeUnlocked", isHardModeUnlocked ? 1 : 0);
-        PlayerPrefs.Save();
-
-        Debug.Log("HardmodeUnlocked is now " + isHardModeUnlocked);
-    }
 }

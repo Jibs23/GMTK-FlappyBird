@@ -11,7 +11,6 @@ public class LogicScript : MonoBehaviour
     public GameObject HardModeOption;
     public bool HardMode = false;
     public bool isGameOver = false;
-    public bool UnlockedHardMode;
     public bool IsGameRunning = false; // For when the game starts, waiting for input.
     public int playerScore = 0;
     public HighscoreTrackingScript highscoreManagerScript;
@@ -28,14 +27,9 @@ public class LogicScript : MonoBehaviour
     }
     void Start()
     {
-        highscoreManagerScript = Highscoremanager.GetComponent<HighscoreTrackingScript>();
-        
         HardMode = PlayerPrefs.GetInt("HardMode", 0) == 1; // Load the value of HardMode from the player's preferences.
         Debug.Log("HardMode is currently " + HardMode);
         
-        UnlockedHardMode = PlayerPrefs.GetInt("HardmodeUnlocked", 0) == 1; // Check whether hardmode is unlocked.
-        Debug.Log("Hardmode unlocked is " + UnlockedHardMode);
-
         sound = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundEffectPlayer>();
         CheckMarkManager();
     }
@@ -62,19 +56,6 @@ public class LogicScript : MonoBehaviour
     public void gameOver()
     {
         GameOverScreen.SetActive(true); // Show the game over screen
-
-        if (int.Parse(highscoreManagerScript.highscoreText.text) > 1 && UnlockedHardMode == false)
-        {
-            highscoreManagerScript.UnlockHardModeOption();
-        }
-        if (UnlockedHardMode == true) // DRAW HARDMODE TOGGLE OPTION
-        {
-            HardModeOption.SetActive(true);
-        }
-        else
-        {
-            HardModeOption.SetActive(false);
-        }
         isGameOver = true;
 
     }
