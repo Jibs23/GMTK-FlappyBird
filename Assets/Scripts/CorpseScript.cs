@@ -7,14 +7,15 @@ public class CorpseScript : MonoBehaviour
     public float TimeBeforeFall = 2f;
     public LogicScript logic;
     Rigidbody2D myRigidbody;
-    SpriteRenderer mySpriteRenderer;
+    SoundEffectPlayer sound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        sound = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundEffectPlayer>();
+        sound.PlayGameOverSound();
         myRigidbody = GetComponent<Rigidbody2D>();
         myRigidbody.bodyType = RigidbodyType2D.Static;
-        mySpriteRenderer = GetComponent<SpriteRenderer>();
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         StartCoroutine(FallAfterTime(TimeBeforeFall)); // Start the coroutine
         StartCoroutine(DestroyAfterTime(TimeToDestroy)); // Start the coroutine

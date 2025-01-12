@@ -17,7 +17,6 @@ public class bird : MonoBehaviour
         logic.gameOver();
         isDead = true;
         Debug.Log("Bird died");
-        // TODO: Add death animation.
         
         Instantiate(logic.corpsePrefab, transform.position, Quaternion.identity); // Create a corpse at the bird's position
         Destroy(gameObject);
