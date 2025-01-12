@@ -51,10 +51,6 @@ public class bird : MonoBehaviour
         if (transform.position.y > 8 || transform.position.y < -8) // If the bird is off screen
         {
             offScreen = true;
-            if (isDead == false)
-            {
-                Debug.Log("Bird off screen");
-            }
             Die();
         }
     }

@@ -10,9 +10,9 @@ public class PipeSpawner : MonoBehaviour
     private float timer = 0;
     public float heightOffset = 1;
     public float spawnRate = 2;
-    public float Deficulty1 = 1.5f;
-    public float Deficulty2 = 1.1f;
-    public float Deficulty3 = 0.8f;
+    public float Deficulty1 = 1.45f;
+    public float Deficulty2 = 1.25f;
+    public float Deficulty3 = 0.95f;
     void UpdateSpawnRate() // Update the pipe spawn rate based on the player's score.
     {
         if (logic.HardMode == false)
