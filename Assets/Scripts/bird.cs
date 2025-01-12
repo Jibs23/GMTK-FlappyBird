@@ -46,7 +46,6 @@ public class bird : MonoBehaviour
             sound.PlayFlapSound();
             myRigidbody.linearVelocity = Vector2.up * flap_strenght;
             logic.IsGameRunning = true;
-            Debug.Log("Flap");
         }
 
         if (transform.position.y > 8 || transform.position.y < -8) // If the bird is off screen
