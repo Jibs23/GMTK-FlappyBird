@@ -335,9 +335,9 @@ MonoBehaviour:
   HardModeOption: {fileID: 34190216}
   HardMode: 0
   isGameOver: 0
-  UnlockedHardMode: 0
   IsGameRunning: 0
   playerScore: 0
+  highscoreManagerScript: {fileID: 0}
 --- !u!4 &118999661
 Transform:
   m_ObjectHideFlags: 0
@@ -821,6 +821,7 @@ MonoBehaviour:
   highscoreText: {fileID: 141145239}
   currentScoreText: {fileID: 1369675236}
   Logic: {fileID: 0}
+  UnlockedHardMode: 0
 --- !u!1 &1368642949
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,7 +20,6 @@ public class HighscoreTrackingScript : MonoBehaviour
             PlayerPrefs.SetInt("Highscore", int.Parse(currentScoreText.text)); // Set the highscore to the current score
             highscoreText.text = currentScoreText.text;
             Debug.Log("Highscore updated");
-
-                }
-            }
+        }
+    }
 }
